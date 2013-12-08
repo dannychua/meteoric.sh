@@ -58,10 +58,10 @@ fi
 
 SETUP="
 sudo apt-get install software-properties-common;
-sudo add-apt-repository ppa:chris-lea/node.js-legacy;
+sudo add-apt-repository ppa:chris-lea/node.js;
 sudo apt-get -qq update;
 sudo apt-get install git mongodb;
-sudo apt-get install nodejs npm;
+sudo apt-get install nodejs;
 node --version;
 sudo npm install -g forever;
 curl https://install.meteor.com | /bin/sh;
