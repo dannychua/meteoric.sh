@@ -7,7 +7,7 @@ Deploy Meteor on EC2 (or your own server)
 The easiest way to install (or update) `meteoric` is using curl:
 
 ```bash
-$ curl https://raw.github.com/julien-c/meteoric.sh/master/install | sh
+$ curl https://raw.github.com/dannychua/meteoric.sh/master/install | sh
 ```
 
 You may need to `sudo` in order for the script to symlink `meteoric` to your `/usr/local/bin`.
@@ -18,13 +18,13 @@ Create a conf file named `meteoric.config.sh` in your project's folder, setting 
 
 ```bash
 # IP or URL of the server you want to deploy to
-APP_HOST=meteor.julien-c.fr
+APP_HOST=meteor.dannychua.com
 
 # If you want a different ROOT_URL, when using a load balancer for instance, set it here
 #ROOT_URL=mycustom.url.com
 
 # Comment this if your host is not an EC2 instance
-EC2_PEM_FILE=~/.ssh/proxynet.pem
+#EC2_PEM_FILE=~/.ssh/proxynet.pem
 
 # What's your project's Git repo?
 GIT_URL=git://github.com/SachaG/Microscope.git
